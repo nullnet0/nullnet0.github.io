@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SophieTheShork</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/error.css">
+</head>
+<body>
+<div class="loading-box" id="loading-box-1">
+    <div class="terminal-loader">
+        <div class="terminal-header">
+            <div class="terminal-title">Status</div>
+            <div class="terminal-controls">
+                <div class="control close"></div>
+                <div class="control minimize"></div>
+                <div class="control maximize"></div>
+            </div>
+        </div>
+        <div class="text">Loading...</div>
+    </div>
+</div>
+
+<script type="module">
+    import render from './dist/main.js';
+
+    console.log("Rendering");
+    render();
+</script>
+
+</body>
+</html>

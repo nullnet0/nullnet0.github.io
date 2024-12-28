@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                          // Use ES6 or later
+    "module": "ESNext",                        // Use CommonJS module resolution (Node.js)
+    "moduleResolution": "node",                  // Use Node module resolution strategy
+    "lib": [
+      "ESNext",
+      "dom"
+    ],                                           // Include ES2015 features
+    "strict": true,                              // Enable strict type checking
+    "esModuleInterop": true,                     // Enable interoperability between CommonJS and ES6 modules
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,                   // Allow importing of JSON files
+    "outDir": "./dist",                          // Output directory for compiled files
+    "rootDir": "./src"                           // Root directory for source files
+  },
+  "include": ["src/**/*.ts"],                    // Include all TypeScript files in the src folder
+  "exclude": ["node_modules"]                    // Exclude node_modules
+}
