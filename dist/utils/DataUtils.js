@@ -11,16 +11,19 @@ export async function getData() {
     return jsonData.counter;
 }
 export async function updateData() {
-    const currentValue = await getData();
+    /*const currentValue = await getData();
     const newValue = currentValue + 1;
+
     const response = await fetch(dataFilePath, {
-        method: 'PUT', // Use PUT instead of POST
+        method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({ counter: newValue }),
     });
+
     if (!response.ok) {
         throw new Error('Failed to update data');
-    }
+    }*/
+    // nuh uh, github pages doesnt like this guh
 }
