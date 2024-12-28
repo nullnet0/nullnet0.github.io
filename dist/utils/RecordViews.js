@@ -2,6 +2,9 @@ import { getData, updateData } from './DataUtils.js';
 import renderErrorScreen from "./ErrorScreen.js";
 import Config from "../config.js";
 export function newView() {
+    if (Config.isGithub) {
+        return;
+    }
     updateData()
         .then(() => {
         if (Config.debug) {

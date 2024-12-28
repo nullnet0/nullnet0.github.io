@@ -1,3 +1,4 @@
+import Config from "../config.js";
 const dataFilePath = '/db/data.json';
 export async function getData() {
     const response = await fetch(dataFilePath);
@@ -11,9 +12,11 @@ export async function getData() {
     return jsonData.counter;
 }
 export async function updateData() {
-    /*const currentValue = await getData();
+    if (Config.isGithub) {
+        return;
+    }
+    const currentValue = await getData();
     const newValue = currentValue + 1;
-
     const response = await fetch(dataFilePath, {
         method: 'PUT',
         headers: {
@@ -21,9 +24,7 @@ export async function updateData() {
         },
         body: JSON.stringify({ counter: newValue }),
     });
-
     if (!response.ok) {
         throw new Error('Failed to update data');
-    }*/
-    // nuh uh, github pages doesnt like this guh
+    }
 }
