@@ -43,6 +43,6 @@ function renderErrorScreen() {
     loadingBox.appendChild(terminalLoader);
     overlay.appendChild(loadingBox);
     document.body.appendChild(overlay);
-    document.title = "NotPiotrekDev [!] Error";
+    document.title = "SophieTheShork [!] Error";
 }
 export default renderErrorScreen;

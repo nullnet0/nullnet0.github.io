@@ -8,13 +8,13 @@ export async function getData() {
     if (typeof jsonData.counter !== 'number') {
         throw new Error('Invalid data format');
     }
-    return String(jsonData.counter);
+    return jsonData.counter;
 }
 export async function updateData() {
     const currentValue = await getData();
     const newValue = currentValue + 1;
     const response = await fetch(dataFilePath, {
-        method: 'POST',
+        method: 'PUT', // Use PUT instead of POST
         headers: {
             'Content-Type': 'application/json',
         },
