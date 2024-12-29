@@ -1,6 +1,7 @@
 function renderWhyGriefed() {
     const div = document.createElement("div");
     div.classList.add("div", "last-div");
+    div.id = 'rv';
     document.body.appendChild(div);
     const title = document.createElement("p");
     title.textContent = "Why was my server renovated?";
