@@ -1,7 +1,7 @@
 import { getData } from "../utils/DataUtils.js";
 async function renderAboutMe() {
     const div = document.createElement('div');
-    div.classList.add('aboutme-div', 'fade-box');
+    div.classList.add('div', 'fade-box');
     div.id = 'aboutme';
     document.body.appendChild(div);
     const title = document.createElement('p');
@@ -17,7 +17,7 @@ async function renderAboutMe() {
     desc.classList.add('aboutme-desc');
     desc.id = "aboutme-desc";
     let description = "• $[time_1] of programming experience.$[n]" +
-        "• Living in Poland$[n]" +
+        "• Living in Poland.$[n]" +
         "• Currently developing mods/plugins for Minecraft.";
     description = description.replaceAll("$[viewsCount]", `<b style="color: hotpink">` + await getData() + `</b>`);
     description = description.replaceAll("$[time_1]", `<span class="name">2 years</span>`);

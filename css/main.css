@@ -72,7 +72,7 @@ html, body {
     border-radius: 8px;
 }
 
-.aboutme-div {
+.div {
     display: flex;
     flex-direction: column;
     margin-top: 150px;
@@ -112,4 +112,45 @@ a:hover {
 .name {
     font-weight: 600;
     color: #de00ff;
+}
+
+.p-title {
+    font-size: 21px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.projects-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 18px;
+}
+
+.p-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    max-width: 300px;
+    max-height: 400px;
+    padding: 15px;
+    margin: 10px 10px 10px 10px;
+    background: #363636;
+}
+
+.wg-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 18px;
+}
+
+.wg-description {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.last-div {
+    margin-bottom: 100px;
 }
