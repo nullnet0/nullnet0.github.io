@@ -4,6 +4,7 @@ import renderNav from './components/NavBar.js';
 import renderAboutMe from "./components/AboutMe.js";
 import renderProjects from "./components/Projects.js";
 import renderWhyGriefed from "./components/WhyGriefed.js";
+import renderCopyright from "./components/Copyright.js";
 export default function render() {
     try {
         if (Config.websiteStatus === 0) {
@@ -28,6 +29,10 @@ export default function render() {
             }
             // newView();
             // renderViews();
+            renderCopyright();
+            if (Config.debug) {
+                console.log("Rendered Copyright");
+            }
             // @ts-ignore
             document.getElementById("loading-box-1").style.display = "none";
         }
