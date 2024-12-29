@@ -14,6 +14,8 @@ function renderProjects() {
     addProject(div, "Kraken", "Kraken is an administration dashboard for minecraft servers. Currently private, not planning to release it to public.");
     addProject(div, "Discord Reaper V2", "Discord Reaper V2 is a private discord servers renovation tool.");
     addProject(div, "VoxelClient", "Voxel Client is a minecraft client currently indev, in future will be public.");
+    addProject(div, "ServerTools", "Funny plugin (trust me)");
+    addProject(div, "ShorkAPI", "API for all my plugins fr");
 }
 function addProject(parentDiv, title, description) {
     const projectDiv = document.createElement('div');
