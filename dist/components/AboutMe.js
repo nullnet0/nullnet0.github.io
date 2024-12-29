@@ -18,9 +18,11 @@ async function renderAboutMe() {
     desc.id = "aboutme-desc";
     let description = "• $[time_1] of programming experience.$[n]" +
         "• Living in Poland.$[n]" +
-        "• Currently developing mods/plugins for Minecraft.";
+        "• Currently developing mods/plugins for Minecraft.$[n]" +
+        "• Taken by $[uwu] :3";
     description = description.replaceAll("$[viewsCount]", `<b style="color: hotpink">` + await getData() + `</b>`);
     description = description.replaceAll("$[time_1]", `<span class="name">2 years</span>`);
+    description = description.replaceAll("$[uwu]", `<span class="name">A</span>`);
     description = description.replaceAll(`$[n]`, `<br>`);
     description = description.replaceAll(`$[b]`, `<b>`);
     description = description.replaceAll(`$[bb]`, `</b>`);
