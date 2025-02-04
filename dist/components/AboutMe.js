@@ -7,7 +7,7 @@ async function renderAboutMe() {
     const title = document.createElement('p');
     title.classList.add('aboutme-title');
     let descr = "Hi! I'm $[name]";
-    descr = descr.replaceAll(`$[name]`, `<span class="name">Sophie</span>`);
+    descr = descr.replaceAll(`$[name]`, `<span class="name">nullnet</span>`);
     title.innerHTML = descr;
     div.appendChild(title);
     const line = document.createElement('div');
@@ -18,10 +18,9 @@ async function renderAboutMe() {
     desc.id = "aboutme-desc";
     let description = "• $[time_1] of programming experience.$[n]" +
         "• Living in Poland.$[n]" +
-        "• Currently developing mods/plugins for Minecraft.$[n]" +
-        "• Taken by $[uwu] :3";
+        "• Currently developing mods/plugins for Minecraft.";
     description = description.replaceAll("$[viewsCount]", `<b style="color: hotpink">` + await getData() + `</b>`);
-    description = description.replaceAll("$[time_1]", `<span class="name">2 years</span>`);
+    description = description.replaceAll("$[time_1]", `<span class="name">3 years</span>`);
     description = description.replaceAll("$[uwu]", `<span class="name">A</span>`);
     description = description.replaceAll(`$[n]`, `<br>`);
     description = description.replaceAll(`$[b]`, `<b>`);
