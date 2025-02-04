@@ -4,7 +4,7 @@ function renderNav() {
     document.body.appendChild(navDiv);
     const p_title = document.createElement("p");
     p_title.className = "nav-title";
-    p_title.textContent = "SophieTheShork";
+    p_title.textContent = "nullnet";
     navDiv.appendChild(p_title);
     const p_option_aboutme = document.createElement("p");
     p_option_aboutme.className = "nav-option";
