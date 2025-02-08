@@ -15,7 +15,7 @@ function renderProjects() {
     addProject(div, "Discord Reaper V2", "Discord Reaper V2 is a private discord servers renovation tool.");
     addProject(div, "VoxelClient", "Voxel Client is a minecraft client currently indev, in future will be public.");
     addProject(div, "ServerTools", "Funny plugin (trust me)");
-    addProject(div, "ShorkAPI", "API for all my plugins fr");
+    addProject(div, "Rateusz Inc.", "https://rateusz-inc.github.io");
 }
 function addProject(parentDiv, title, description) {
     const projectDiv = document.createElement('div');
